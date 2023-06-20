@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Carrusel con Enlaces y Botón de Alerta</title>
+</head>
+<body>
+  <div id="slider" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+      <li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+      <li data-bs-target="#slider" data-bs-slide-to="2"></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://example1.com">
+          <img src="images/image1.jpg" class="d-block w-100" alt="Slide 1">
+        </a>
+        <div class="carousel-caption">
+          <h5>Slide 1</h5>
+          <p>Descripción del slide 1</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="https://example2.com">
+          <img src="images/image2.jpg" class="d-block w-100" alt="Slide 2">
+        </a>
+        <div class="carousel-caption">
+          <h5>Slide 2</h5>
+          <p>Descripción del slide 2</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="https://example3.com">
+          <img src="images/image3.jpg" class="d-block w-100" alt="Slide 3">
+        </a>
+        <div class="carousel-caption">
+          <h5>Slide 3</h5>
+          <p>Descripción del slide 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </a>
+
+    <!-- Botón de Alerta -->
+    <button class="btn btn-primary" onclick="mostrarAlerta()">Mostrar Alerta</button>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
